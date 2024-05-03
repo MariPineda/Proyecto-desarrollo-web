@@ -10,25 +10,82 @@
 </head>
 <body>
     <header>
-        <nav>
+        <!--<nav>-->
             <!-- logo linkeado a la home page -->
-            <a href="./index.html"><img src="./assets/lightbulb-5379703_1280.png" alt="Logo Biblioteca" class="logo">Biblioteca Municipal</a>
+            <!--<a href="./index.html"><img src="./assets/lightbulb-5379703_1280.png" alt="Logo Biblioteca" class="logo">Biblioteca Municipal</a>-->
             <!-- menú de navegación de las 5 secciones -->
-            <ul>
+            <!--<ul>
                 <li><a href="./pages/acerca-de-nosotros.html">Nosotros</a></li>
                 <li><a href="./pages/libros.html">Libros</a></li>
                 <li><a href="./pages/talleres.html">Talleres</a></li>
                 <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
+        </nav>-->
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <div class="row">
+                    <a class="navbar-brand col-sm-6" href="./index.html">
+                        <img src="./assets/lightbulb-5379703_1280.png" alt="Logo Biblioteca" class="logo">Biblioteca Municipal
+                    </a>
+                    <button class="navbar-toggler col-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon color-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/acerca-de-nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/libros.html">Libros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/talleres.html">Talleres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
         <section>
             <h1>Biblioteca Municipal</h1>
             <p>Disponibilidad de libros y talleres para todas las edades. Una manera divertida de conocer e interactuar con la comunidad.</p>
-            <img src="./assets/portada.jpg" alt="Biblioteca" class="fotolanding">
+
+            <!--<img src="./assets/portada.jpg" alt="Biblioteca" class="fotolanding">
             <img src="./assets/portada2.png" alt="Biblioteca2" class="fotolanding">
-            <img src="./assets/portada3.jpg" alt="Biblioteca3" class="fotolanding">
+            <img src="./assets/portada3.jpg" alt="Biblioteca3" class="fotolanding"> -->
+
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/portada.jpg" alt="Biblioteca1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/portada2.jpg" alt="Biblioteca2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/portada3.jpg" alt="Biblioteca3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
     </main>
     <section>
