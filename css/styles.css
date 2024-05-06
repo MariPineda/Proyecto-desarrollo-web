@@ -49,6 +49,9 @@ nav a {
     margin-top: 1rem;
     margin-bottom: 1rem;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 ul li {
     color: rgb(123, 118, 118);
@@ -256,10 +259,26 @@ footer svg {
 }
 /*mobile*/
 @media screen and (min-width: 320px) and (max-width: 767px){
-    nav a {
+    ul li {
         font-size: 1.3rem;
     }
+    .logo {
+        width: 3rem;
+        height: 3rem;
+    }
+    footer ul li  {
+        font-size: 0.8rem;
+    }
+    footer svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    footer p{
+        font-size: 0.8rem;
+    }
+
 }
+
 /*    .layout {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr 3fr 2fr 2fr 0.5fr ;
@@ -314,8 +333,23 @@ footer svg {
 }
 /*tablet*/
 @media screen and (min-width: 768px) and (max-width: 1023px){
-    nav a {
-        font-size: 2rem;
+
+    ul li {
+        font-size: 1.8rem;
+    }
+    .logo {
+        width: 6rem;
+        height: 6rem;
+    }
+    footer ul li  {
+        font-size: 1rem;
+    }
+    footer svg {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    footer p{
+        font-size: 1rem;
     }
 
 /*    .layout {
@@ -362,8 +396,19 @@ footer svg {
 }
 /*desktop*/
 @media screen and (min-width: 1024px) and (orientation: landscape){
-    nav a {
-        font-size: 2.5rem;
+
+    ul li {
+        font-size: 2rem;
+    }
+    .logo {
+        width: 8rem;
+        height: 8rem;
+    }
+    footer ul li  {
+        font-size: 1.3rem;
+    }
+    footer p{
+        font-size: 1.3rem;
     }
 
 
